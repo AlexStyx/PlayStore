@@ -45,13 +45,24 @@ struct ProfileView: View {
                         editedEmail = user.email
                         editedPassword = user.password
                     }
-
+                    
                     withAnimation {
                         isEditing.toggle()
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
                 .foregroundColor(.blue)
+                
+                if !isEditing {
+                    Section {
+                        Button("Выйти") {
+                            Router.shared.logout()
+                        }
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .foregroundColor(.red)
+                        .buttonStyle(.plain) // Без фона
+                    }
+                }
             }
         }
         .navigationTitle("Профиль")

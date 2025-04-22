@@ -98,7 +98,6 @@ struct AuthView: View {
                 } else {
                     let newUser = User(email: email, password: password, userType: selectedUserType.rawValue)
                     modelContext.insert(newUser)
-                    try! modelContext.save()
                     onAuthSuccess(newUser)
                 }
             } else {

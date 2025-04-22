@@ -9,13 +9,20 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Профиль", systemImage: "person.circle")
                 }
-
+    
             
-            // Мжешь добавить другие табы здесь
-            Text("Другой экран")
+            // Можешь добавить другие табы здесь
+            ProductListView(currentUser: currentUser)
                 .tabItem {
-                    Label("Главная", systemImage: "house")
+                    Label("Объявления", systemImage: "list.bullet")
                 }
+            
+            if (currentUser.correctedType == .buyer) {
+                CartView(currentUser: currentUser)
+                    .tabItem {
+                        Label("Корзина", systemImage: "cart")
+                    }
+            }
         }
         .navigationBarBackButtonHidden(true)
     }

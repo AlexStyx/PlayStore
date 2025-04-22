@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5FF368772DB853AD0005CDE2 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF368762DB853AD0005CDE2 /* CartService.swift */; };
+		5FF368792DB855870005CDE2 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF368782DB855870005CDE2 /* CartView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5FF1BD732DB82ACC008C055A /* PlayStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FF368762DB853AD0005CDE2 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
+		5FF368782DB855870005CDE2 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +39,8 @@
 		5FF1BD6A2DB82ACC008C055A = {
 			isa = PBXGroup;
 			children = (
+				5FF368782DB855870005CDE2 /* CartView.swift */,
+				5FF368762DB853AD0005CDE2 /* CartService.swift */,
 				5FF1BD752DB82ACC008C055A /* PlayStore */,
 				5FF1BD742DB82ACC008C055A /* Products */,
 			);
@@ -119,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF368792DB855870005CDE2 /* CartView.swift in Sources */,
+				5FF368772DB853AD0005CDE2 /* CartService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
